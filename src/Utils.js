@@ -4,13 +4,23 @@ const resetCase = (playerCount) => {
   return cases;
 };
 
+const shuffleCase = (cases) => {
+  const newCases = {};
+  const keys = Object.keys(cases)
+  const values = Object.values(cases).sort((a, b) => 0.5 - Math.random());
+  keys.forEach((key, index) => {
+    newCases[key] = values[index]
+  });
+  return newCases;
+};
+
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
 const getRandomPlayers = (playerCount, data) => {
   const players = new Set();
-  while (players.size < playerCount) players.add(data[getRandomNumber(0, 10)]);
+  while (players.size < playerCount) players.add(data[getRandomNumber(0, playerCount)]);
   return [...players];
 };
 
@@ -40,4 +50,4 @@ const getRandomLegs = (playerCount) => {
   return legs;
 };
 
-export { resetCase, getRandomLegs, getRandomPlayers };
+export { resetCase, shuffleCase, getRandomLegs, getRandomPlayers };

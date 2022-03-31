@@ -43,9 +43,9 @@ const Body = styled.tbody`
 
   @media ${({ theme }) => theme.mobile} {
     border-left: ${({ isLeftEdge }) =>
-      isLeftEdge ? "4px solid black" : "2px solid black"};
+    isLeftEdge ? "4px solid black" : "2px solid black"};
     border-right: ${({ isRightEdge }) =>
-      isRightEdge ? "4px solid black" : "2px solid black"};
+    isRightEdge ? "4px solid black" : "2px solid black"};
   }
 `;
 

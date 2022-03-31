@@ -38,7 +38,6 @@ const CaseList = ({
   checkReady,
   inputCase,
 }) => {
-  // console.log("caselist rendering");
   useEffect(() => {
     Object.keys(cases).length && checkReady(cases);
   }, [cases]);

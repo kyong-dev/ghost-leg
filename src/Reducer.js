@@ -1,65 +1,89 @@
-import { resetCase, getRandomLegs, getRandomPlayers } from "Utils";
+import { resetCase, shuffleCase, getRandomLegs, getRandomPlayers } from "Utils";
 
 export const data = [
   {
     id: 1,
-    name: "토끼",
-    src: "https://image.flaticon.com/icons/svg/3069/3069187.svg",
+    name: "앵무새",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196378.png",
     color: "gray",
+    nickname: ""
   },
   {
     id: 2,
     name: "돼지",
-    src: "https://image.flaticon.com/icons/svg/3069/3069273.svg",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196361.png",
     color: "crimson",
+    nickname: ""
   },
   {
     id: 3,
-    name: "펭귄",
-    src: "https://image.flaticon.com/icons/svg/3069/3069217.svg",
+    name: "말",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196364.png",
     color: "darkolivegreen",
+    nickname: ""
   },
   {
     id: 4,
-    name: "카멜레온",
-    src: "https://image.flaticon.com/icons/svg/3069/3069230.svg",
+    name: "낙타",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196366.png",
     color: "lightseagreen",
+    nickname: ""
   },
   {
     id: 5,
     name: "강아지",
-    src: "https://image.flaticon.com/icons/svg/3069/3069267.svg",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196381.png",
     color: "darkorange",
+    nickname: ""
   },
   {
     id: 6,
-    name: "기린",
-    src: "https://image.flaticon.com/icons/svg/3069/3069201.svg",
+    name: "닭",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196373.png",
     color: "peru",
+    nickname: ""
   },
   {
     id: 7,
-    name: "돌고래",
-    src: "https://image.flaticon.com/icons/svg/3069/3069269.svg",
+    name: "양",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196374.png",
     color: "royalblue",
+    nickname: ""
   },
   {
     id: 8,
-    name: "말",
-    src: "https://image.flaticon.com/icons/svg/3069/3069284.svg",
+    name: "달팽이",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196369.png",
     color: "saddlebrown",
+    nickname: ""
   },
   {
     id: 9,
-    name: "여우",
-    src: "https://image.flaticon.com/icons/svg/3069/3069166.svg",
-    color: "salmon",
+    name: "뱀",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196360.png",
+    color: "green",
+    nickname: ""
   },
   {
     id: 10,
     name: "코끼리",
-    src: "https://image.flaticon.com/icons/svg/3069/3069224.svg",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196359.png",
     color: "rebeccapurple",
+    nickname: ""
+  },
+  {
+    id: 11,
+    name: "키위",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196372.png",
+    color: "lightgreen",
+    nickname: ""
+  },
+  {
+    id: 12,
+    name: "고슴도치",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196387.png",
+    color: "pink",
+    nickname: ""
   },
 ];
 
@@ -94,10 +118,17 @@ export const reducer = (state, action) => {
         cases: resetCase(state.playerCount),
         legs: getRandomLegs(state.playerCount),
       };
+    case "SHUFFLE_CASES":
+      return {
+        ...state,
+        players: getRandomPlayers(state.playerCount, data),
+        cases: shuffleCase(state.cases)
+      };
     case "START_GAME":
       return {
         ...state,
         gameState: "playing",
+        cases: state.cases
       };
     case "INPUT_CASE":
       return {

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Context } from "Context";
 
 const SubButtonGroupContainer = () => {
-  const { state, goHome, goResult, goGame } = useContext(Context);
+  const { state, goHome, goResult, goGame, shuffleCases } = useContext(Context);
   const { gameState, page } = state;
 
   return (
@@ -13,6 +13,7 @@ const SubButtonGroupContainer = () => {
       goHome={goHome}
       goResult={goResult}
       goGame={goGame}
+      shuffleCases={shuffleCases}
     />
   );
 };

@@ -30,7 +30,7 @@ function App() {
   };
 
   const onIncBtn = () => {
-    if (players >= 10) return;
+    if (players >= 11) return;
     dispatch({ type: "INC_PLAYERS" });
   };
 

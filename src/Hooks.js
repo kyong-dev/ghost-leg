@@ -9,6 +9,7 @@ const useHook = () => {
 
   const enterGame = useCallback(() => dispatch({ type: "ENTER_GAME" }), []);
   const startGame = useCallback(() => dispatch({ type: "START_GAME" }), []);
+  const shuffleCases = useCallback(() => dispatch({ type: "SHUFFLE_CASES" }), []);
 
   const checkReady = useCallback((cases) => {
     const isReady = Object.values(cases).every((value) => value.trim() !== "");
@@ -33,6 +34,7 @@ const useHook = () => {
     decPlayers,
     enterGame,
     startGame,
+    shuffleCases,
     checkReady,
     inputCase,
     goHome,

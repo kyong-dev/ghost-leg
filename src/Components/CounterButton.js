@@ -24,11 +24,11 @@ const CounterButton = ({ playerCount, direction, incPlayers, decPlayers }) => {
         <Button
           aria-label="플레이어 수 증가"
           onClick={incPlayers}
-          disabled={playerCount >= 10}
+          disabled={playerCount >= 12}
         >
           <FontAwesomeIcon
             icon={faArrowAltCircleRight}
-            color={playerCount > 9 ? "lightgray" : "orange"}
+            color={playerCount > 11 ? "lightgray" : "orange"}
           />
         </Button>
       )}

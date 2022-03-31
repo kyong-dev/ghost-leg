@@ -16,6 +16,7 @@ const Results = () => {
           return (
             <li key={id} className={"resultProfile"}>
               <img src={src} alt={name} className={"resultImg"} />
+
               <span style={{ background: color }} className={"resultCase"}>
                 {cases[result]}
               </span>
