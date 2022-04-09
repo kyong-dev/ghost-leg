@@ -85,6 +85,27 @@ export const data = [
     color: "pink",
     nickname: ""
   },
+  {
+    id: 13,
+    name: "물개",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196379.png",
+    color: "lightblue",
+    nickname: ""
+  },
+  {
+    id: 14,
+    name: "늑대",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196380.png",
+    color: "darkgray",
+    nickname: ""
+  },
+  {
+    id: 15,
+    name: "해마",
+    src: "https://cdn-icons-png.flaticon.com/512/7196/7196376.png",
+    color: "yellow",
+    nickname: ""
+  },
 ];
 
 export const initState = {
