@@ -12,8 +12,8 @@ const Case = React.memo(
           {["setting", "ready", "notReady"].includes(gameState) ? (
             <CaseInput
               type="text"
-              aria-label={`case ${idx + 1}`}
-              placeholder={`case ${idx + 1}`}
+              aria-label={`${idx + 1}`}
+              placeholder={`${idx + 1}`}
               gameState={gameState}
               onChange={(e) => inputCase(e, idx)}
               value={value}

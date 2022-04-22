@@ -119,7 +119,7 @@ export const initState = {
 };
 
 export const reducer = (state, action) => {
-  const bla = () => console.log("from reducer", state);
+  //const bla = () => console.log("from reducer", state);
   switch (action.type) {
     case "INC_PLAYERS":
       return {

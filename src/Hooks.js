@@ -8,7 +8,10 @@ const useHook = () => {
   const decPlayers = useCallback(() => dispatch({ type: "DEC_PLAYERS" }), []);
 
   const enterGame = useCallback(() => dispatch({ type: "ENTER_GAME" }), []);
-  const startGame = useCallback(() => dispatch({ type: "START_GAME" }), []);
+  const startGame = useCallback(() => {
+    dispatch({ type: "START_GAME" });
+  }
+    , []);
   const shuffleCases = useCallback(() => dispatch({ type: "SHUFFLE_CASES" }), []);
 
   const checkReady = useCallback((cases) => {
