@@ -2,13 +2,9 @@
 
 ## v2.1.0
 
-2020년 6월 20일 - 2020년 6월 29일  
-리액트로 사다리 타기 게임을 구현한 개인 프로젝트입니다.
+This project is originally cloned from
 
-2020년 12월 02일 - 2020년 12월 08일  
-기존 프로젝트를 보완하여 version2를 개발하였습니다.
-
-[kimfriendship.github.io/ghost-leg/](https://kimfriendship.github.io/ghost-leg/)에서 확인 할 수 있습니다.
+[kimfriendship.github.io/ghost-leg/](https://kimfriendship.github.io/ghost-leg/)
 
 <br>
 
@@ -18,13 +14,18 @@
 
 ## 프로젝트 핵심 목표
 
-### version 2
+### version 2.1
+- 랜덤 프로필 동물 아이콘 변경
+- 닉네임 추가 기능
+- 플레이어 & 케이스 셔플 기능
+
+### version 2 (original)
 
 - 웹 접근성 지침에 부합하도록 마크업 수정
 - 최적화를 통해 리렌더링 최소화 및 성능 향상
 - PC와 Mobile 버전으로 반응형 구현
 
-### version 1
+### version 1 (original)
 
 - 플레이어 수에 따른 랜덤 프로필과 랜덤 사다리 설정
 - 사다리 게임 로직을 리액트의 상태 관리와 자바스크립트로 구현
@@ -42,8 +43,3 @@
 - CSS (version 1)
 
 <br>
-
-## 기타 사항
-
-- 웹 접근성 체크리스트는 [a11y-check-list.md](https://github.com/kimfriendship/ghost-leg/blob/master/a11y-check-list.md)에서 확인 가능합니다.
-- 레포지토리가 변동 됨에 따라 version1의 [commit history](https://github.com/kimfriendship/study-react/commits/master?after=a8c490198ad5f871558779464494383b73923266+34)는 링크에서 별도로 확인 가능합니다.

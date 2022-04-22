@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/kyong-dev/ghost-leg/static/js/main.ed811f31.js",
-    "index.html": "/kyong-dev/ghost-leg/index.html",
-    "main.ed811f31.js.map": "/kyong-dev/ghost-leg/static/js/main.ed811f31.js.map"
+    "main.js": "/ghost-leg/static/js/main.e0af9859.js",
+    "index.html": "/ghost-leg/index.html",
+    "main.e0af9859.js.map": "/ghost-leg/static/js/main.e0af9859.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed811f31.js"
+    "static/js/main.e0af9859.js"
   ]
 }
