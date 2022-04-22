@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/ghost-leg/static/js/main.e0af9859.js",
+    "index.html": "/ghost-leg/index.html",
+    "main.e0af9859.js.map": "/ghost-leg/static/js/main.e0af9859.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e0af9859.js"
+  ]
+}
