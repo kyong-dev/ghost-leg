@@ -6,6 +6,8 @@ This project is originally cloned from
 
 [kimfriendship.github.io/ghost-leg/](https://kimfriendship.github.io/ghost-leg/)
 
+and added some features such as shuffling and adding nickname to players.
+
 <br>
 
 ![ghost-leg_playing_image](https://user-images.githubusercontent.com/60292183/101502329-2bff9a00-39b4-11eb-89f0-fe987a9472d8.gif)
